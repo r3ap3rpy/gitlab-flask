@@ -18,4 +18,4 @@ def test_404():
     client = demo_app.app.test_client()
 
     response = client.get('/foobar')
-    assert response.status_code == 403
+    assert response.status_code == 404
